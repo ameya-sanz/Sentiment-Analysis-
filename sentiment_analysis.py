@@ -189,23 +189,3 @@ sent_pipeline = pipeline('sentiment-analysis')
 
 sent_pipeline('I love sentiment analysis!')
 
-root = Tk()
-w = Label(root, text = 'Sentiment Analyzer')
-w.pack()
-root.mainloop()
-
-import tkinter as tk
-
-root = tk.Tk()
-root.title("Hello, Tkinter!")
-label = tk.Label(root, text="Hello, World!")
-label.pack()
-
-# Function to run the tkinter main loop
-def run_tk():
-    root.mainloop()
-
-# Run the tkinter main loop in a separate thread
-import threading
-tk_thread = threading.Thread(target=run_tk)
-tk_thread.start()
